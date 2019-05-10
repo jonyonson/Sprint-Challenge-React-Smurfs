@@ -95,25 +95,25 @@ Construct your Components to build a Single Page Application. Keep your componen
 Add a Router to this application by using React Router.
 
 - [x] You'll start by wrapping your `root` component in the `Router` component.
-- [ ] Declare your routes with `Route`.
-- [ ] Then make it so you can navigate to your routes using `Link`.
-- [ ] Create two `routes` in your `App` component, one at `'/'` for your `Smurfs` component,and one at `/smurf-form` for your form.
-- [ ] Then in your `App` component, create a nav bar that will use `NavLink` to route to your different pages.
+- [x] Declare your routes with `Route`.
+- [x] Then make it so you can navigate to your routes using `Link`.
+- [x] Create two `routes` in your `App` component, one at `'/'` for your `Smurfs` component,and one at `/smurf-form` for your form.
+- [x] Then in your `App` component, create a nav bar that will use `NavLink` to route to your different pages.
 
 ## STRETCH PROBLEMS
 
 **HTTP/Axios Stretch Problems**
 
-- [ ] The following two endpoints are here for you if you'd like to push yourselves a little further.
+- [x] The following two endpoints are here for you if you'd like to push yourselves a little further.
 
-- [ ] **HINT** if you are going to be working on Stretch Problem, you'll need to use that unique `id`.
+- [x] **HINT** if you are going to be working on Stretch Problem, you'll need to use that unique `id`.
 
 **DELETE '/smurfs/123', where 123 is the Id of the smurf you want to remove**
 
-- [ ] For this endpoint to work, all you need is an id sent up as part of the request url.
+- [x] For this endpoint to work, all you need is an id sent up as part of the request url.
 
-- [ ] If your delete worked, you'll get a list of the smurfs back.
-- [ ] Example:
+- [x] If your delete worked, you'll get a list of the smurfs back.
+- [x] Example:
 
 ```js
 // output: `A list of all the smurfs in the Smurf DB will be returned`
@@ -135,8 +135,8 @@ Add a Router to this application by using React Router.
 
 **PUT '/smurfs/123', where 123 is the Id of the smurf you want to modify**
 
-- [ ] For this endpoint to work, you'll need an `id` added to the URL, and at least one field to update on the Smurf object. `name` `age` `height`.
-- [ ] Example:
+- [x] For this endpoint to work, you'll need an `id` added to the URL, and at least one field to update on the Smurf object. `name` `age` `height`.
+- [x] Example:
 
 ```js
 // input:
