@@ -39,6 +39,7 @@ class SmurfForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <input
             className="SmurfForm__input"
+            autoComplete="off"
             onChange={this.handleInputChange}
             placeholder="Name"
             value={this.state.name}
@@ -51,6 +52,7 @@ class SmurfForm extends Component {
             placeholder="Age"
             value={this.state.age}
             name="age"
+            autoComplete="off"
           />
           <br />
           <input
@@ -59,6 +61,7 @@ class SmurfForm extends Component {
             placeholder="Height"
             value={this.state.height}
             name="height"
+            autoComplete="off"
           />
           <br />
           {!this.props.smurf && (
