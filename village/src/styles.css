@@ -27,7 +27,7 @@ body {
 
 .Smurfs {
   width: 500px;
-  max-width: 95%;
+  /* max-width: 95%; */
   margin: 0 auto;
   /* border: 1px solid black; */
 }
@@ -37,47 +37,51 @@ body {
 }
 
 .Smurf {
-  width: 90%;
+  /* width: 500px; */
+  width: 100%;
   border: 1px solid black;
   padding: 15px;
   position: relative;
   margin-top: 30px;
 }
 
-.Smurf__delete {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+svg[class^='Smurf__icon'] {
+  margin-right: 10px;
   cursor: pointer;
   transition: all .2s ease;
   fill: rgba(0,0,0,0.6);
 }
 
-.Smurf__delete:hover {
+svg[class^='Smurf__icon']:hover {
   transform: scale(1.2);
   transition: all .2s ease;
+}
+
+.Smurf__icon-trash:hover {
   fill: red;
+}
+
+.Smurf__icon-edit:hover {
+  fill: rgba(0,0,0,0.8) !important;
 }
 
 .Smurf__name, .Smurf__height, .Smurf__age {
   margin: 0;
-}
-
-.Smurf__name, .Smurf__height {
   padding-bottom: 15px;
 }
 
+.SmurfForm.AddSmurf {
+  width: 500px;
+  text-align: center;
 
+}
 .SmurfForm {
   border: 1px solid black;
-  width: 400px;
-  max-width: 95%;
-  text-align: center;
+  width: 100%;
   margin: 0 auto;
   margin-top: 40px;
   padding: 25px;
 }
-
 
 .SmurfForm__title {
   margin-top: 0;

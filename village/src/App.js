@@ -10,11 +10,9 @@ class App extends Component {
     super(props);
     this.state = {
       smurfs: [],
+      editId: null,
     };
   }
-  // add any needed code to ensure that the smurfs collection exists on state and it has data coming from the server
-  // Notice what your map function is looping over and returning inside of Smurfs.
-  // You'll need to make sure you have the right properties on state and pass them down to props.
 
   componentDidMount() {
     axios
@@ -37,6 +35,22 @@ class App extends Component {
       .delete(`http://localhost:3333/smurfs/${id}`)
       .then(res => {
         this.setState({ smurfs: res.data });
+      })
+      .catch(err => console.log(err));
+  };
+
+  handleUpdate = id => {
+    this.setState({ editId: id });
+  };
+
+  updateSmurf = updatedSmurf => {
+    axios
+      .put(`http://localhost:3333/smurfs/${this.state.editId}`, updatedSmurf)
+      .then(res => {
+        this.setState({
+          smurfs: res.data,
+          editId: null,
+        });
       })
       .catch(err => console.log(err));
   };
@@ -69,7 +83,10 @@ class App extends Component {
             <Smurfs
               {...props}
               smurfs={this.state.smurfs}
+              handleUpdate={this.handleUpdate}
               deleteSmurf={this.deleteSmurf}
+              editId={this.state.editId}
+              updateSmurf={this.updateSmurf}
             />
           )}
         />
