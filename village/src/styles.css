@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App__nav {
+  background-color: #0FA8EB;
+  padding: 15px 0;
+  text-align: right;
+}
+
+.App__nav__link {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.App__nav__link--active {
+  border-bottom: 2px solid white;
+}
+
+.Smurfs {
+  width: 500px;
+  /* max-width: 95%; */
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+.Smurfs__title {
+  text-align: center;
+}
+
+.Smurf {
+  /* width: 500px; */
+  width: 100%;
+  border: 1px solid black;
+  padding: 15px;
+  position: relative;
+  margin-top: 30px;
+}
+
+svg[class^='Smurf__icon'] {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all .2s ease;
+  fill: rgba(0,0,0,0.6);
+}
+
+svg[class^='Smurf__icon']:hover {
+  transform: scale(1.2);
+  transition: all .2s ease;
+}
+
+.Smurf__icon-trash:hover {
+  fill: red;
+}
+
+.Smurf__icon-edit:hover {
+  fill: rgba(0,0,0,0.8) !important;
+}
+
+.Smurf__name, .Smurf__height, .Smurf__age {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.SmurfForm.AddSmurf {
+  width: 500px;
+  text-align: center;
+
+}
+.SmurfForm {
+  border: 1px solid black;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 25px;
+}
+
+.SmurfForm__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.SmurfForm__input {
+  border: none;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.SmurfForm__submit {
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: white;
+  padding: 5px 10px;
+  color: #0FA8EB;
+  font-weight: 600;
+  border: 2px solid #0FA8EB;
+  cursor: pointer;
+}
+
+.SmurfForm__submit:hover {
+  background-color: #0FA8EB;
+  color: white;
+}
+
